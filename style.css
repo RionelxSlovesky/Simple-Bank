@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* buttons */
+.primary-btn {
+    font-size: 18px;
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    color: green;
+    border-radius: 10px;
+}
+
+.primary-btn:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/* header */
+
+header {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* main */
+
+/* login */
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-header {
+    color: green;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#user-email, #user-password {
+    padding: 0 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* bank */
+.bank-cards-container { 
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    height: 130px;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.bank-card {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    border-radius: 20px;
+}
