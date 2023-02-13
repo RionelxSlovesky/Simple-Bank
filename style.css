@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+/* input boxes */
+
+.primary-inp {
+
+    padding: 0 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+
 /* buttons */
 .primary-btn {
     font-size: 18px;
@@ -45,28 +57,55 @@ header {
     margin-bottom: 20px;
 }
 
-#user-email, #user-password {
-    padding: 0 10px;
-    font-size: 18px;
-    height: 40px;
-    width: 250px;
-    margin-bottom: 20px;
+/* bank */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
-/* bank */
-.bank-cards-container { 
+.bank-cards-container {
+    width: 650px;
+}
+
+.upper-cards { 
     display: grid;
     grid-template-columns: repeat(3,200px);
     height: 130px;
-    justify-content: center;
-    column-gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.bank-card {
-    background-color: pink;
+.upper-bank-card {
+    background-color: green;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
     border-radius: 20px;
+}
+
+.lower-cards { 
+    display: grid;
+    grid-template-columns: repeat(2,315px);
+    height: 200px;
+    justify-content: space-between;
+}
+
+.lower-bank-card {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+
+.bank-header {
+    margin-bottom: 20px;
+    color: green;
 }

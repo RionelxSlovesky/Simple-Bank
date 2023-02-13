@@ -13,20 +13,45 @@
     </header>
     <main>
         <div class="bank-cards-container">
-            <div class="bank-card">
-                <h2>Deposit</h2>
-                <h3>$000</h3>
-            </div>
-            <div class="bank-card">
-                <h2>Withdraw</h2>
-                <h3>$000</h3>
-            </div>
-            <div class="bank-card">
-                <h2>Balance</h2>
-                <h3>$000</h3>
-            </div>
+            <section class="upper-cards">
+
+                <div class="upper-bank-card">
+                    <h2>Deposit</h2>
+                    <h3 id="deposit-amount">$000</h3>
+                </div>
+                <div class="upper-bank-card">
+                    <h2>Withdraw</h2>
+                    <h3 id="withdraw-amount">$000</h3>
+                </div>
+                <div class="upper-bank-card">
+                    <h2>Balance</h2>
+                    <h3 id="balance-amount">$000</h3>
+                </div>
+
+            </section>
+            <section class="lower-cards">
+
+                <div class="lower-bank-card">
+                    <h2 class="bank-header">Please Deposit</h2>
+                    <input type="number" name="" id="deposit-inp" class="primary-inp" placeholder="amount to deposit">
+                    <button class="primary-btn" id="deposit-btn">Deposit</button>
+                </div>
+                <div class="lower-bank-card">
+                    <h2 class="bank-header">Please Withdraw</h2>
+                    <input type="number" name="" id="withdraw-inp" class="primary-inp" placeholder="amount to withdraw">
+                    <button class="primary-btn" id="withdraw-btn">Withdraw</button>
+                </div>                
+
+                
+
+            </section>
+            
         </div>
     </main>
+    <footer>
+
+    </footer>
+    <script src="deposit.js"></script>
     
 </body>
 </html>
